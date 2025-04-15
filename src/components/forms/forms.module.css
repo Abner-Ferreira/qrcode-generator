@@ -1,0 +1,50 @@
+.formContainer{
+  width: 65%;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#title{
+  font-size: var(--titulo);
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.forms{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.inputBox{
+  width: 40%;
+  height: fit-content;
+  margin: 5px 0;
+}
+.btnBox{
+  width: 40%;
+  height: 25%;
+  margin: 5px 0;
+}
+
+@media (min-width: 1300px) {
+  .formContainer{
+    width: 75%;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .btnBox{
+    width: 40%;
+    height: 15%;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,21 @@
+.container{
+  width: 100vw;
+  height: 65px;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.logo{
+  height: 100%;
+  margin-right: 50px;
+}
+
+@media (min-width: 1400px) {
+  .container{
+    height: 80px;
+  }
+}

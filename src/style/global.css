@@ -1,0 +1,50 @@
+:root{
+  --red: #C50022;
+  --lightRed: #f5b4c0;
+  --white: #FFFFFF;
+  --lightGray: #ECECEC;
+  --mediumGray: #dadada;
+  --lightBlue: #21a0d2;
+  --darkGray: #3F3F3F;
+  --black: #000000;
+  --corDaBarra: #9e9e9e;
+  --btnDesabillitado: #9e9e9e8c;
+  --titulo: 24px;
+  --btnFont: 18px;
+  --font: "Arial";
+  --bold: bold;
+  --cursorPointer: pointer;
+}
+
+body,html{
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+  font-family: var(--font);
+}
+
+.container-geral{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Mudança no tamanho da barra de scroll */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Mudança na cor da barra de scroll */
+::-webkit-scrollbar-track {
+  background: var(--lightGray);
+}
+
+/* Mudança do visualizador da barra de scroll */
+::-webkit-scrollbar-thumb {
+  background: var(--corDaBarra);
+  border-radius: .15rem;
+}

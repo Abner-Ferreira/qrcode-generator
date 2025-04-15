@@ -1,0 +1,75 @@
+.container{
+  width: 35%;
+  height: calc(100vh - 80px);
+  background-color: var(--lightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.qrCodeContainer{
+  height: 50%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrCode {
+  background-color: var(--mediumGray);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrCode span{
+  font-size: 14px;
+}
+
+.imgQrCode{
+  width: 100%;
+  max-width: 100%;
+}
+
+.newQRContainer{
+  height: 15%;
+  width: 25%;
+  margin: 20px ;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+.download{
+  width: 55%;
+  height: 20%;
+  margin: 15px 0;
+}
+
+@media (min-width: 1300px) {
+  .container{
+    width: 25%;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .qrCodeContainer{
+    height: 40%;
+    width: 65%;
+  }
+
+  .download{
+    width: 65%;
+    height: 15%;
+  }
+  
+  .newQRContainer{
+    position: absolute;
+    right: 2%;
+    top: 12%;
+    height: 10%;
+    width: 5%;
+    margin: 0;
+  }
+}
